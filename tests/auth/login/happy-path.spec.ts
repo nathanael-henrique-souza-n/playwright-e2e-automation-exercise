@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test";
 
-import { userLogin } from "../../factories/user.login.factory";
 import { login } from "../../helper/auth/login";
 import user from "../../fixtures/users.json" with { type: "json" };
 
