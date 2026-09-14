@@ -19,7 +19,7 @@
 **Then** the cart should update the total quantity
 **And** the cart total should reflect the new quantity
 
-BR-003 - The system should remove a product from the cart successfully
+### BR-003 - The system should remove a product from the cart successfully
 
 **Given** the user has one or more products in the shopping cart
 **When** the user removes a product from the cart
