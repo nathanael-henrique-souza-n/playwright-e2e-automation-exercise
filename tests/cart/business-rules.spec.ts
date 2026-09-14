@@ -16,7 +16,7 @@ test.describe("Business rules", () => {
       page,
     }) => {
       const initialQuantity = Number(page.locator(".disabled").textContent());
-      const curretQuantity = Number(initialQuantity + 1);
+      const updatedQuantity = Number(initialQuantity + 1);
 
       await page.locator("a.add-to-cart").first().click();
 
@@ -24,7 +24,7 @@ test.describe("Business rules", () => {
       await page.getByRole("link", { name: "View Cart" }).click();
       checkProductCart(page);
 
-      expect(Number(initialQuantity)).toBe(curretQuantity);
+      expect(Number(initialQuantity)).toBe(updatedQuantity);
     });
   });
 });
